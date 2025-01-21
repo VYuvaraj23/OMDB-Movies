@@ -15,7 +15,7 @@ function App() {
         <SearchProvider>
         <Routes>
 
-        <Route path="/" element={<Movies />} />
+        <Route path="/" element={<ListOfMovies />} />
           <Route path="/search/:search/page/:page" element={<ListOfMovies />} />
           <Route path="/:id" element={<DetailsofMovie/>}/>
           <Route path="*" element={<ErrorPage/>}/>
