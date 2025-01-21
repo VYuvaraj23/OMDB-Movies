@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router";
-import Movies from "./pages/movies";
 import { SearchProvider } from "./context/CreateContext";
 import ErrorPage from "./pages/ErrorPage";
 import DetailsofMovie from "./pages/DetailsofMovie";
+import ListOfMovies from "./pages/ListOfMovies";
 // import Pagination from "./components/Pagination";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
         <Routes>
 
         <Route path="/" element={<Movies />} />
-          <Route path="/search/:search/page/:page" element={<Movies />} />
+          <Route path="/search/:search/page/:page" element={<ListOfMovies />} />
           <Route path="/:id" element={<DetailsofMovie/>}/>
           <Route path="*" element={<ErrorPage/>}/>
       </Routes>

@@ -5,7 +5,7 @@ import Search from "../components/Search";
 import { SearchContext } from "../context/CreateContext";
 import { useContext, useEffect } from "react";
 
-function Movies() {
+function ListOfMovies() {
   const { page } = useParams()
   const { dispatch } = useContext(SearchContext)
   useEffect(() => { 
@@ -23,4 +23,4 @@ function Movies() {
   );
 }
 
-export default Movies;
+export default ListOfMovies;
