@@ -3,7 +3,7 @@ import { SearchContext } from "../context/CreateContext";
 import { GetMovie } from "../service/Api";
 import { useNavigate } from "react-router";
 
-function MovieCard() {
+function Card() {
   const { state, dispatch } = useContext(SearchContext);
 const navigate=useNavigate()
   const handleClick = async (id) => {
@@ -56,4 +56,4 @@ const navigate=useNavigate()
   );
 }
 
-export default MovieCard;
+export default Card;

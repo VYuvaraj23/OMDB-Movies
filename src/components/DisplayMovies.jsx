@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { SearchContext } from "../context/CreateContext";
 import { GetMoviesCards } from "../service/Api";
-import MovieCard from "./movieCard";
+import Card from "./Card";
 
 const DisplayMovies = () => {
   GetMoviesCards();
@@ -16,7 +16,7 @@ const DisplayMovies = () => {
             <p className="font-bold text-3xl text-center">Loading...</p>
           ) : (
             <>
-              <MovieCard />
+              <Card />
             </>
           )}
         </>
